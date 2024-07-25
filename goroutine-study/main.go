@@ -98,7 +98,3 @@ func test4(ch chan string, gotime string) {
 		time.Sleep(time.Second)
 	}
 }
-
-func test5(ch chan string) {
-
-}

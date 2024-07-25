@@ -41,16 +41,16 @@ func main() {
 	*/
 
 	//增或减
-	//AddStudy()
+	AddStudy()
 
 	//比较并且替换
-	//CompareAndSwapStudy()
+	CompareAndSwapStudy()
 
 	//读
-	//LoadStudy()
+	LoadStudy()
 
 	//存储
-	//StoreStudy()
+	StoreStudy()
 
 	//交换
 	SwapStduy()

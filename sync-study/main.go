@@ -21,13 +21,13 @@ Pool			临时对象池
 func main() {
 	GOTIME := "2006-01-02 15:04:05"
 	//互斥锁
-	//MeutxStudy(GOTIME)
+	MeutxStudy(GOTIME)
 	//读写锁
-	//RWMeutxStudy(GOTIME)
+	RWMeutxStudy(GOTIME)
 	//等待组
-	//WaitGroupStudy(GOTIME)
+	WaitGroupStudy(GOTIME)
 	//并发安全字典
-	MapStudy(GOTIME)
+	MapStudy()
 	fmt.Println(time.Now().Format(GOTIME))
 }
 
@@ -132,7 +132,7 @@ func (this *MapTest) Test() {
 	this.age = 24
 }
 
-func MapStudy(GOTIME string) {
+func MapStudy() {
 	/*
 		go中原生的map并不是并发安全的，多个goroutine同时操作时，原生的mao会报错
 		常用方法：
@@ -180,7 +180,4 @@ func MapStudy(GOTIME string) {
 		fmt.Println(value)
 
 	}
-}
-func test(ch chan string) {
-	ch <- "ch"
 }
