@@ -1,0 +1,7 @@
+- name:  span_job
+  hosts: all
+  user: root
+  gather_facts:  false
+  tasks:
+    - name: test
+      shell: echo {{ var1 }}
