@@ -1,0 +1,8 @@
+// 请认真对待 proto 文件的文件名，MessageName.proto
+// 故此包名, 命名为 mobile.proto
+syntax = "proto3"; // 指定语法格式，proto3
+option go_package="./;protoc";
+package protoc; // 指定生成的 mobile.pb.go 的包名，防止命名冲突
+message MobileInfo {
+  string brand = 1; // 品牌
+}
